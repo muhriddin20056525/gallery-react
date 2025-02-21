@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ===================== Gallery ===================== */
+.gallery {
+  width: 90%;
+  margin: 0px auto;
+  padding: 30px 0px;
+}
+/* ===================== /Gallery ===================== */
+
+/* ===================== Search ===================== */
+
+.search {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto 30px;
+}
+
+.search input {
+  padding: 8px;
+  flex-grow: 1;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+/* ===================== /Search ===================== */
+
+/* ===================== Gallery List ===================== */
+
+.gallery-list {
+  columns: 3;
+  gap: 20px;
+}
+
+/* ===================== /Gallery List ===================== */
+
+/* ===================== Gallery Item ===================== */
+.gallery-item {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.gallery-item:hover img {
+  scale: 1.2;
+}
+
+.gallery-item,
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* ===================== /Gallery Item ===================== */
+
+/* ===================== Modal ===================== */
+
+.modal {
+  width: 95%;
+  height: 95vh;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .close-icon {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  font-size: 30px;
+  color: crimson;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* ===================== /Modal ===================== */
