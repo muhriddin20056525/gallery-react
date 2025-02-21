@@ -116,3 +116,15 @@
 }
 
 /* ===================== /Modal ===================== */
+
+@media (max-width: 900px) {
+  .gallery-list {
+    columns: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-list {
+    columns: 1;
+  }
+}
